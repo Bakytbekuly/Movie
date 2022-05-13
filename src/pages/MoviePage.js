@@ -63,6 +63,7 @@ export function MoviePage() {
                     </Grid>
                 </Container>
             </div>
+            <div className="footer"></div>
         </div>
     );
 }
