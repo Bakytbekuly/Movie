@@ -97,3 +97,24 @@ body {
 .wrapper_f {
     padding: auto;
 }
+
+
+.category {
+    display: inline-block;
+    color: #0FEFFD;
+    margin-right: 10px;
+    background-color: #110f0f80;
+    border-radius: 0px 8px;
+    font-size: 20px;
+    height: 23px;
+    padding: 10px;
+}
+
+.category_wrapper {
+    padding: auto;
+    margin-bottom: 20px;
+
+
+    ;
+
+}

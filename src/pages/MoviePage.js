@@ -10,7 +10,7 @@ export function MoviePage() {
     const [movie, setMovie] = useState();
     const { movieId } = useParams();
     const [similar, setSimilar] = useState([]);
-    console.log(movieId);
+
 
     useEffect(() => {
         fetch(
@@ -27,6 +27,7 @@ export function MoviePage() {
             .then((res) => setSimilar(res.results));
     }, [movieId]);
 
+
     if (!movie) {
         return "Loading...";
     }
@@ -37,6 +38,7 @@ export function MoviePage() {
             >
 
                 <Container>
+                    <div className="category_wrapper">{movie.genres.map((item) => (<span className="category">{item.name}</span>))}</div>
                     <div className="movie_card__stars">
                         {movie.vote_average >= 0 && <img src={star} alt="" />}
                         {movie.vote_average >= 2 && <img src={star} alt="" />}
