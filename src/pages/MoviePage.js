@@ -54,7 +54,7 @@ export function MoviePage() {
             <div className="wrapper_f">
                 <Container>
                     <h1 className="title">Similar Movies</h1>
-                    <Grid container spacing={1}>
+                    <Grid container spacing={5}>
                         {similar.slice(0, 5).map((movie) => (
                             <Grid item xs={12 / 5}>
                                 <MovieCard key={movie.id} movie={movie} />
