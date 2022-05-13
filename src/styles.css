@@ -26,6 +26,7 @@ body {
 
 .movie_card__link {
     text-decoration: none;
+
 }
 
 .movie_card__poster {
@@ -40,12 +41,14 @@ body {
     object-position: center center;
     box-sizing: border-box;
     transition: 0.3s;
+    z-index: 1;
 }
 
 .movie_card__title {
     margin-top: 8px;
     margin-bottom: 0;
     color: white;
+    z-index: 2;
 }
 
 .movie_card__description {
@@ -56,6 +59,15 @@ body {
     margin: 0;
     transition: 0.3s;
     overflow: auto;
+    z-index: 2;
+}
+
+.movie_card__title {
+    z-index: 2;
+}
+
+.movie_card__description {
+    z-index: 2;
 }
 
 .movie_card:hover {
@@ -67,6 +79,7 @@ body {
 .movie_card:hover .movie_card__poster {
     width: 130%;
     height: 130%;
+
 }
 
 .movie_card:hover .movie_card__description {

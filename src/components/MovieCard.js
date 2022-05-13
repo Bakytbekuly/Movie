@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import star from "../icons/star.svg";
 
 export function MovieCard({ movie }) {
+
     return (
         <Link className="movie_card__link" to={`/movie/${movie.id}`}>
             <div className="movie_card">
